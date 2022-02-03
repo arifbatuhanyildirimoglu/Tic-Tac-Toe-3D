@@ -9,6 +9,8 @@ TagManager:
   - Master
   - Client
   - Slot
+  - Blocker
+  - Speeder
   layers:
   - Default
   - TransparentFX

@@ -41,13 +41,21 @@ public class OScript : MonoBehaviour
     [PunRPC]
     public void RPCInsertStone(int stoneViewId, int slotViewId)
     {
+
         PhotonView stonePhotonView = PhotonView.Find(stoneViewId);
         PhotonView slotPhotonView = PhotonView.Find(slotViewId);
 
+        if (!slotPhotonView.gameObject.GetComponent<Slot>().isEmpty)
+            return;
+        
+        
         stonePhotonView.gameObject.transform.position = new Vector3(slotPhotonView.gameObject.transform.position.x, 5f,
             slotPhotonView.gameObject.transform.position.z);
         stonePhotonView.gameObject.SetActive(true);
-        Destroy(GetComponent<SphereCollider>());
-        Destroy(this);
+        //stonePhotonView.gameObject.transform.SetParent(slotPhotonView.gameObject.transform);
+        slotPhotonView.gameObject.GetComponent<Slot>().isEmpty = false;
+        slotPhotonView.gameObject.GetComponent<Slot>().stoneType = "O";
+        GetComponent<SphereCollider>().enabled = false;
+        this.enabled = false;
     }
 }

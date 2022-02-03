@@ -150,7 +150,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3a815f29f1e0ad468ad14c71f9a0542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 2
   hasStone: 0
+  score: 0
   carryingStone: {fileID: 0}
   insertedSlot: {fileID: 0}
   carryingStoneType: 

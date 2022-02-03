@@ -7,11 +7,13 @@ using UnityEngine;
 public class Slot : MonoBehaviour
 {
     public bool isEmpty;
+    public String stoneType;
 
     // Start is called before the first frame update
     void Start()
     {
         isEmpty = true;
+        stoneType = "Nothing";
     }
 
     // Update is called once per frame

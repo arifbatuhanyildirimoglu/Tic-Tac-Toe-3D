@@ -42,6 +42,23 @@ MonoBehaviour:
   - RPCSetActiveFalse
   - RPCInsertObject
   - RPCInsertStone
+  - GameOverRPC
+  - SetClientGameObjectRPC
+  - ReloadSceneRPC
+  - UpdateScoreTextsRPC
+  - SetScoreRPC
+  - OnRestartButtonClickedRPC
+  - SpeedUpRPC
+  - WaitFiveSecondsRPC
+  - SpeederRPC
+  - RevertSpeedRPC
+  - SetMasterGameObjectRPC
+  - SpawnORPC
+  - SpawnXRPC
+  - InstantiateORPC
+  - SetIsOExistRPC
+  - SetIsOSpawnableRPC
+  - BlockerPowerUpRPC
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1
